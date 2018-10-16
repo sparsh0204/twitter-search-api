@@ -45,10 +45,10 @@ Run the following commands to setup the database
 
 Enter your twitter API in twitterapi/settings.py
 ```
-consumer_key="Your Consumer Key"
-consumer_secret="Your Consumer Secreat"
-key="Your Access Token"
-secret="Your Access Secreat Token"
+YOUR_CONSUMER_KEY="Your Consumer Key"
+YOUR_CONSUMER_SECRET="Your Consumer Secreat"
+YOUR_ACCESS_KEY="Your Access Token"
+YOUR_ACCESS_SECRET="Your Access Secreat Token"
 ```
 Run the deveploment server by
 ```
