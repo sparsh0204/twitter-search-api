@@ -1,4 +1,4 @@
-# Tweet Api
+# Tweet Search Api
 
 An API to extract data from twitter API and applying filters on provided data and to download the data in CSV format.
 
@@ -6,10 +6,10 @@ An API to extract data from twitter API and applying filters on provided data an
 
 ### Prerequisites
 Install these packages
-* Dajngo==1.11.4
-* djangorestframework==3.8.2
-* djangorestframework-csv==2.1.0
-* tweepy==3.6.0
+* [Dajngo] ==1.11.4
+* [djangorestframework] ==3.8.2
+* [djangorestframework-csv]==2.1.0
+* [tweepy]==3.6.0
 
 You can install the individually by using ``` $ pip install PACKAGE-NAME``` or
 
@@ -20,7 +20,7 @@ You can install them at once by running the command
 
 ### Setup
 
-First make a virtaul environment by using the command
+First clone the reprositery and nevigete inside the directory using ```cd <Directory-name>```make a virtuall environment by using the command
 ```
  $ virtualenv -p /usr/bin/python3 venv
 ```
@@ -90,7 +90,7 @@ Eg- ```/api/list?text__startswith=The%20person```
 
 | Fields | Filters | Discription | Example |
 | -------|---------|-------------|---------|
-| text, user_name, user_screen_name | startswith | Filters the field on the basis if it start with the given value | ```http://127.0.0.1:8000/api/list?user_name__startswith=Rohan``` |
+| text, user_name, user_screen_name | startswith | Filters the field on the basis if it start with the given value | [http://127.0.0.1:8000/api/list?user_name__startswith=Rohan] |
 |  | endswith | Filters the field on the basis if it ends with the given value | ```http://127.0.0.1:8000/api/list?text__endswith=in%20india``` |
 |  | contains | Filters the field on the basis if it contains the given value | ```http://127.0.0.1:8000/api/list?text__contains=python``` |
 |  | exact | Filters the field on the basis if it is exactly the given value | ```http://127.0.0.1:8000/api/list?text__exact=abcd``` |
@@ -167,4 +167,8 @@ Here is a example of response for ```http://127.0.0.1:8000/api/list/```
   - next is the nest page in pagination
   - previous is the previous page in pagination 
 
-
+[Dajngo]: https://www.djangoproject.com/
+[djangorestframework]: https://www.django-rest-framework.org/
+[djangorestframework-csv]: https://github.com/mjumbewu/django-rest-framework-csv
+[tweepy]:http://www.tweepy.org/
+[http://127.0.0.1:8000/api/list?user_name__startswith=Rohan]: http://127.0.0.1:8000/api/list?user_name__startswith=Rohan
